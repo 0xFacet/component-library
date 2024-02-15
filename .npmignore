@@ -1,0 +1,32 @@
+# Source files
+src/
+
+# Development files
+tsconfig.json
+*.ts
+!*.d.ts
+*.spec.ts
+*.test.ts
+tests/
+coverage/
+
+# Environment files
+.env
+.env.local
+
+# Configuration files
+.gitignore
+.npmignore
+.travis.yml
+.github/
+.gitlab-ci.yml
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+logs
+*.log
