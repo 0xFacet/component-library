@@ -42,60 +42,60 @@ export default App;
 
 ## Components Overview
 
-Our component library is designed with modularity and reusability in mind, structured into two main categories: UI Components for foundational elements and Core Components for more complex implementations that may extend UI components.
+Our component library is meticulously crafted to support a wide range of design and development needs, organized into foundational UI components and advanced Core components. This structure ensures that developers can easily access exactly what they need, from simple building blocks to complex, feature-rich components.
 
 ### UI Components
 
-These are atomic, reusable components that serve as the building blocks for your application. They are located in the `ui` folder and include:
+Located in the `ui` folder, these components are the versatile building blocks of your application's UI. Designed for maximum reusability and customization, they include:
 
-- `Accordion`: For collapsible content sections.
-- `Button`: Basic UI element for actions.
-- `Checkbox`: For selections.
-- `Dialog`: Basic overlay or popup.
-- `DropdownMenu`: For selecting from a list of options within a dropdown.
-- `Input`: For user text input.
-- `Label`: Text labels for form elements.
-- `RadioGroup`: For selections where only one option is selectable.
-- `Select`: For selecting from a list of options.
-- `Sheet`: A sliding panel typically used for sub-tasks or information hierarchy.
-- `Tooltip`: Short descriptive messages that appear on hover of an element.
+- `Accordion`: Collapsible sections for efficient space use and content organization.
+- `Button`: The quintessential interactive element for user actions.
+- `Checkbox`: For user selections and toggles.
+- `Dialog`: Modal overlays for critical user confirmations and interactions.
+- `DropdownMenu`: Selectable lists for option-rich inputs.
+- `Input`: Text fields for user input, supporting various data types.
+- `Label`: Descriptive text for form elements and user interface controls.
+- `RadioGroup`: Exclusive selection controls for setting preferences or options.
+- `Select`: Dropdowns for single or multiple selections from a list.
+- `Sheet`: Sliding panels for secondary content or actions.
+- `Tooltip`: Contextual hints and brief messages tied to UI elements.
 
 ### Core Components
 
-These components often extend or incorporate one or more UI components to provide complex functionalities and are located in the root folder. Notably, some components may appear in both categories, indicating the core version provides enhanced features or integrations.
+These components leverage the foundational UI components to create more sophisticated, ready-to-use functionalities. They address common UI patterns and complex interactions, making them indispensable for building rich interfaces. They include:
 
-- `Avatar`: Display user or entity avatars.
-- `Button` (Enhanced): An extended version implementing additional logic or styling from the base `Button`.
-- `Card`: A composite component that may use UI components for structured content display.
-- `Carousel`: For cycling through a series of content, potentially utilizing UI elements for navigation.
-- `CopyText`: Utility component, often leveraging UI buttons or inputs for copying functionality.
-- `Grid`: A layout component that might use basic UI components for constructing complex grids.
-- `Heading`: Styled text components for creating a visual hierarchy.
-- `Link`: Navigation component, possibly extending base UI buttons or labels.
-- `List`: For displaying lists, potentially enhancing UI elements for interactive lists.
-- `Modal`: An overlay component that might incorporate several UI components for content display and actions.
-- `Pagination`: A navigational component that could utilize UI buttons for page selection.
-- `Section`: For grouping related content, potentially using UI components for layout.
-- `SegmentedControl`: A controller component that might be an advanced version of UI buttons or toggles.
-- `ShowMoreText`: A text display component that could combine UI elements for expand/collapse functionality.
-- `Spinner`: Indicates loading state, possibly an enhanced version of the UI Spinner with additional features.
-- `Table` (Enhanced): An advanced table component that utilizes UI elements for displaying complex data structures.
-- `Toast`: For displaying brief messages, potentially an extended version of the UI toast with added functionalities.
-- `Tooltip` (Enhanced): An extended tooltip that incorporates additional UI components or logic for complex use cases.
+- `Avatar`: Displays user or entity profile pictures, often with status indicators.
+- `Button` (Enhanced): Extends the foundational `Button` with extended functionalities like loading states.
+- `Card`: A versatile container for grouping related information and actions in a clear, concise format.
+- `Carousel`: A dynamic component for browsing through a collection of items, images, or content.
+- `CopyText`: A utility component that simplifies text copying to the clipboard with a single click.
+- `Grid`: A layout tool for creating responsive, grid-based designs.
+- `Heading`: Typography component for defining hierarchical content structure.
+- `Link`: Enhanced navigation elements for in-app routing or external linking.
+- `List`: Organized display for lists of items, supporting various styles and interactions.
+- `Modal` (Enhanced): Extends the foundational `Dialog` with additional features.
+- `Pagination`: Navigation component for managing content spread across multiple pages.
+- `Section`: Layout component that provides thematic grouping for content, enhancing readability and structure.
+- `SegmentedControl`: A control component for toggling between different views or modes within the same context.
+- `ShowMoreText`: Text display with built-in mechanisms for expanding and collapsing long content.
+- `Spinner`: A visual cue for loading processes, elegantly indicating background activities.
+- `Table`: A component for simple data presentation.
+- `Toast`: Timed, non-disruptive messages for user notifications and feedback.
+- `Tooltip` (Enhanced): Extends the foundational `Tooltip`.
 
 ### Importing Components
 
-To use these components in your project, you can import them as follows:
+Utilize components in your project seamlessly:
 
 ```javascript
-// Importing a UI component
-import { Button as UIButton } from "@0xfacet/component-library/ui";
+// Importing UI components
+import { Button as UIButton, Input } from "@0xfacet/component-library/ui";
 
-// Importing an enhanced Core component
-import { Button as CoreButton } from "@0xfacet/component-library";
+// Importing Core components for more complex scenarios
+import { Button as CoreButton, Modal } from "@0xfacet/component-library";
 ```
 
-This naming convention in the import statement (`UIButton` vs. `CoreButton`) is just an example to differentiate between the base UI component and its enhanced version. Adjust according to your project's needs and naming conventions.
+Our components are designed to be intuitive and flexible, catering to a broad spectrum of design requirements and ensuring that your applications remain at the forefront of modern UI design.
 
 ## Contributing
 
