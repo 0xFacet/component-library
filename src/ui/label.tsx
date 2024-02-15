@@ -2,15 +2,9 @@
 
 import * as React from "react";
 import * as LabelPrimitive from "@radix-ui/react-label";
-import { cva } from "class-variance-authority";
+import { VariantProps, cva } from "class-variance-authority";
 
-import { cn } from "../utils";
-
-export type OmitUndefined<T> = T extends undefined ? never : T;
-export type VariantProps<Component extends (...args: any) => any> = Omit<
-  OmitUndefined<Parameters<Component>[0]>,
-  "class" | "className"
->;
+import { cn } from "../lib/utils";
 
 const labelVariants = cva(
   "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"

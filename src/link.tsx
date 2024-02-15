@@ -4,7 +4,7 @@ import React, { HTMLAttributeAnchorTarget, MouseEventHandler } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import { cn } from "./utils";
+import { cn } from "./lib/utils";
 
 export interface NavLinkProps {
   href: string;

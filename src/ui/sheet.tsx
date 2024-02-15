@@ -3,16 +3,10 @@
 import * as React from "react";
 import * as SheetPrimitive from "@radix-ui/react-dialog";
 import { Cross2Icon } from "@radix-ui/react-icons";
-import { cva } from "class-variance-authority";
+import { VariantProps, cva } from "class-variance-authority";
 
-import { cn } from "../utils";
+import { cn } from "../lib/utils";
 import { Button } from "./button";
-
-export type OmitUndefined<T> = T extends undefined ? never : T;
-export type VariantProps<Component extends (...args: any) => any> = Omit<
-  OmitUndefined<Parameters<Component>[0]>,
-  "class" | "className"
->;
 
 const Sheet = SheetPrimitive.Root;
 

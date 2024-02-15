@@ -1,6 +1,6 @@
 import React from "react";
 
-import { cn } from "./utils";
+import { cn } from "./lib/utils";
 
 export interface SectionContainerProps {
   children: React.ReactNode;

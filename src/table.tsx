@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import { cn } from "./utils";
+import { cn } from "./lib/utils";
 
 export interface TableProps {
   headers?: (string | { content: React.ReactNode; align?: "left" | "right" })[];

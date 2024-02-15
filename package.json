@@ -1,9 +1,13 @@
 {
   "name": "@0xfacet/component-library",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "private": false,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./ui": "./dist/ui/index.js"
+  },
   "description": "A reusable component library for Next.js applications.",
   "scripts": {
     "build": "rm -rf ./dist && tsc",

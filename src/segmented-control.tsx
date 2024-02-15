@@ -2,8 +2,8 @@
 
 import React, { useState, useEffect, useRef } from "react";
 
-import { Button } from "./ui/button";
-import { cn } from "./utils";
+import { Button } from "./button";
+import { cn } from "./lib/utils";
 
 export interface SegmentedControlProps {
   options: string[];

@@ -1,13 +1,13 @@
 import React from "react";
 
-import { Button } from "./ui/button";
+import { Button } from "./button";
 import {
   DialogHeader,
   DialogDescription,
   DialogContent,
   Dialog,
 } from "./ui/dialog";
-import { cn } from "./utils";
+import { cn } from "./lib/utils";
 
 export interface ModalProps {
   open: boolean;
