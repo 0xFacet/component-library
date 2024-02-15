@@ -11,10 +11,14 @@ export interface ButtonProps
   isLoading?: boolean;
 }
 
-export const Button: React.FC<ButtonProps> = (
-  { variant, onClick, children, isLoading: isLoadingProp, disabled, ...props },
-  ref
-) => {
+export const Button: React.FC<ButtonProps> = ({
+  variant,
+  onClick,
+  children,
+  isLoading: isLoadingProp,
+  disabled,
+  ...props
+}) => {
   const [isLoadingInternal, setLoading] = React.useState(false);
   const isLoading =
     isLoadingProp !== undefined ? isLoadingProp : isLoadingInternal;
@@ -67,7 +71,6 @@ export const Button: React.FC<ButtonProps> = (
 
   return (
     <ButtonUi.Button
-      ref={ref}
       onClick={handleClick}
       disabled={disabled || isLoading}
       variant={variant}

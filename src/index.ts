@@ -12,7 +12,6 @@ export * from "./pagination";
 export * from "./section";
 export * from "./segmented-control";
 export * from "./show-more-text";
-export * from "./spinner";
 export * from "./table";
 export * from "./toast";
 export * from "./tooltip";

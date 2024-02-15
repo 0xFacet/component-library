@@ -58,6 +58,7 @@ Located in the `ui` folder, these components are the versatile building blocks o
 - `RadioGroup`: Exclusive selection controls for setting preferences or options.
 - `Select`: Dropdowns for single or multiple selections from a list.
 - `Sheet`: Sliding panels for secondary content or actions.
+- `Spinner`: A visual cue for loading processes, elegantly indicating background activities.
 - `Tooltip`: Contextual hints and brief messages tied to UI elements.
 
 ### Core Components
@@ -78,7 +79,6 @@ These components leverage the foundational UI components to create more sophisti
 - `Section`: Layout component that provides thematic grouping for content, enhancing readability and structure.
 - `SegmentedControl`: A control component for toggling between different views or modes within the same context.
 - `ShowMoreText`: Text display with built-in mechanisms for expanding and collapsing long content.
-- `Spinner`: A visual cue for loading processes, elegantly indicating background activities.
 - `Table`: A component for simple data presentation.
 - `Toast`: Timed, non-disruptive messages for user notifications and feedback.
 - `Tooltip` (Enhanced): Extends the foundational `Tooltip`.
@@ -96,6 +96,36 @@ import { Button as CoreButton, Modal } from "@0xfacet/component-library";
 ```
 
 Our components are designed to be intuitive and flexible, catering to a broad spectrum of design requirements and ensuring that your applications remain at the forefront of modern UI design.
+
+## Integrating with Tailwind CSS
+
+To ensure that the Tailwind CSS class names used in `@0xfacet/component-library` are correctly applied and compiled in your project, you need to include the library's component files in your Tailwind configuration. This step is crucial for Tailwind CSS to apply its styles to the components imported from `@0xfacet/component-library`.
+
+Follow these instructions to update your `tailwind.config.js` file:
+
+1. **Locate Your Tailwind Configuration File**
+
+   Open your project's `tailwind.config.js` file. If you do not have this file, you may need to initialize Tailwind CSS in your project first. Refer to [Tailwind CSS Installation](https://tailwindcss.com/docs/installation) for guidance.
+
+2. **Update the `content` Array**
+
+   In the `tailwind.config.js` file, find the `content` array. You will add a new pattern that matches the JavaScript files within the `@0xfacet/component-library` package. Add the following line to the array:
+
+   ```javascript
+   "./node_modules/@0xfacet/component-library/**/*.js";
+   ```
+
+   After adding, your `content` array should look something like this:
+
+   ```javascript
+   module.exports = {
+     content: [
+       // Other contents...
+       "./node_modules/@0xfacet/component-library/**/*.js", // Add this line
+     ],
+     // Other Tailwind configuration...
+   };
+   ```
 
 ## Contributing
 
