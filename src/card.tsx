@@ -22,12 +22,14 @@ export const Card: React.FC<CardProps> = ({
       )}
     >
       {childrenArray.filter(Boolean).map((child, i) => (
-        <div
-          key={i}
-          className={cn("flex flex-1 overflow-x-auto", childrenClassName)}
-        >
+        <div key={i} className="flex flex-1 overflow-x-auto">
           <div className="flex flex-1 flex-row w-full">
-            <div className="flex flex-col flex-1 divide-y divide-line">
+            <div
+              className={cn(
+                "flex flex-col flex-1 divide-y divide-line",
+                childrenClassName
+              )}
+            >
               {child}
             </div>
           </div>
